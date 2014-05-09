@@ -79,7 +79,7 @@ public:
     void gotMessage(ofMessage msg);
     
     ofSoundPlayer	song1;
-    ofImage         glow3,glow4;
+    ofImage         glow3,glow4,glow5;
     ofColor         color1,color2;
     
     int             nBandsToGet2;
