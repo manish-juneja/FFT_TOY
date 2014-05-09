@@ -1,6 +1,5 @@
 #include "testApp.h"
 
-#include "testApp.h"
 
 //----------------------  Params -------------------------------
 Params param;        //Definition of global variable
@@ -125,26 +124,26 @@ void Particle::draw(){
         //	ofDisableAlphaBlending();
     }
     
-   /* unsigned char * pix2 = glow2.getPixels();
-    float numPix2 = glow2.width * glow2.height * 4;
-    
-    float x =ofMap(fftchosen,5,250,5,250);
-    
-    for(int i = 0; i <numPix2;  i+=4){
-        if(pix2[i] != 0)    if(pix2[i]<x) pix2[i] = x;
-        if(pix2[i+1] != 0)  if(pix2[i]<x) pix2[i+1] = x;
-        if(pix2[i+2] != 0)  if(pix2[i]<x) pix2[i+2] = x;
-    }
-    glow2.update();
-    
-    float size = ofMap(fftchosen,5,250,300,500);
-    glow2.setAnchorPoint(size/2,size/2);
-    glow2.resize(size,size);
-    
-    //	ofDrawBitmapString(ofToString(size) + "size,", 40,40);
-    
-    glow2.draw(ofGetWidth()/2,ofGetHeight()/2);
-    */
+    /* unsigned char * pix2 = glow2.getPixels();
+     float numPix2 = glow2.width * glow2.height * 4;
+     
+     float x =ofMap(fftchosen,5,250,5,250);
+     
+     for(int i = 0; i <numPix2;  i+=4){
+     if(pix2[i] != 0)    if(pix2[i]<x) pix2[i] = x;
+     if(pix2[i+1] != 0)  if(pix2[i]<x) pix2[i+1] = x;
+     if(pix2[i+2] != 0)  if(pix2[i]<x) pix2[i+2] = x;
+     }
+     glow2.update();
+     
+     float size = ofMap(fftchosen,5,250,300,500);
+     glow2.setAnchorPoint(size/2,size/2);
+     glow2.resize(size,size);
+     
+     //	ofDrawBitmapString(ofToString(size) + "size,", 40,40);
+     
+     glow2.draw(ofGetWidth()/2,ofGetHeight()/2);
+     */
     
 }
 
@@ -175,7 +174,7 @@ void testApp::setup(){
     ofBackground( 0,0,0);
     color1.set(0, 0, 0);
     color2.set(0, 10, 60);
-  //  ofBackgroundGradient(color1, color2);
+    //  ofBackgroundGradient(color1, color2);
     
     //for emitting particles-----
     newP.setupImage();
@@ -204,7 +203,7 @@ void testApp::setup(){
     int h = ofGetHeight();
     
     //loading sound
- //   song1.loadSound("jdee_beat.mp3");
+    //   song1.loadSound("jdee_beat.mp3");
     song1.loadSound("Tribute (Original Mix).mp3");
     
     
@@ -284,7 +283,31 @@ void testApp::draw(){
         p[i].draw();
     }
     
-    unsigned char * pix3 = glow3.getPixels();
+    glow5 = glow3;
+    
+    
+    unsigned char * pix5 = glow5.getPixels();
+    float numpix5 = glow5.width * glow5.height * 4;
+    
+    float x =ofMap(fftchosen2,5,250,5,250);
+    
+    for(int i = 0; i <numpix5;  i+=4){
+        if(pix5[i] != 0)    if(pix5[i]<x) pix5[i] = x;
+        if(pix5[i+1] != 0)  if(pix5[i]<x) pix5[i+1] = x;
+        if(pix5[i+2] != 0)  if(pix5[i]<x) pix5[i+2] = x;
+    }
+    glow5.update();
+    
+    float size = ofMap(fftchosen2,5,250,200,400);
+    glow5.setAnchorPoint(size/2,size/2);
+    glow5.resize(size,size);
+    
+    glow5.draw(ofGetWidth()/2,ofGetHeight()/2);
+    
+    
+    
+    /*
+     unsigned char * pix3 = glow3.getPixels();
      float numpix3 = glow3.width * glow3.height * 4;
      
      float x =ofMap(fftchosen2,5,250,5,250);
@@ -302,6 +325,7 @@ void testApp::draw(){
      
      glow3.draw(ofGetWidth()/2,ofGetHeight()/2);
      
+     */
     glow4.draw(ofGetWidth()/2,ofGetHeight()/2);
     
     //	ofDrawBitmapString(ofToString(size) + "size,", 40,40);
@@ -343,40 +367,40 @@ void testApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){
-
+    
 }
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
-
+    
 }
 
 //--------------------------------------------------------------
 void testApp::mouseDragged(int x, int y, int button){
-
+    
 }
 
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
-
+    
 }
 
 //--------------------------------------------------------------
 void testApp::mouseReleased(int x, int y, int button){
-
+    
 }
 
 //--------------------------------------------------------------
 void testApp::windowResized(int w, int h){
-
+    
 }
 
 //--------------------------------------------------------------
 void testApp::gotMessage(ofMessage msg){
-
+    
 }
 
 //--------------------------------------------------------------
-void testApp::dragEvent(ofDragInfo dragInfo){ 
-
+void testApp::dragEvent(ofDragInfo dragInfo){
+    
 }
