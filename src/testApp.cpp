@@ -98,7 +98,7 @@ void Particle::draw(){
         glow.resize(size,size);
         glow.draw(pos,size,size);
         glow.update();
-        //	ofDisableAlphaBlending();
+       
     }
     
    
@@ -132,9 +132,8 @@ void testApp::setup(){
     ofBackground( 0,0,0);
     color1.set(0, 0, 0);
     color2.set(0, 10, 60);
-    //  ofBackgroundGradient(color1, color2);
+   
     
-    //for emitting particles-----
     newP.setupImage();
     newP.fftSet();
     
@@ -264,7 +263,7 @@ void testApp::draw(){
     
     glow4.draw(ofGetWidth()/2,ofGetHeight()/2);
     
-    //	ofDrawBitmapString(ofToString(size) + "size,", 40,40);
+    
     ofDrawBitmapString(ofToString(ofGetFrameRate()) + "fps", 40,50);
     ofDrawBitmapString(ofToString(bornRate) + "particles", 40,60);
     
