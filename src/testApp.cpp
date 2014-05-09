@@ -1,3 +1,7 @@
+// Copyright (c) 2013 Manish Juneja
+// License: The MIT License (MIT)
+// MIT License page: http://opensource.org/licenses/MIT
+
 #include "testApp.h"
 
 
