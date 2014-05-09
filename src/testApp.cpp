@@ -76,28 +76,7 @@ void Particle::fftUpdate(){
 void Particle::draw(){
     if ( live ) {
         
-        /* unsigned char * pix = glow.getPixels();
-         
-         for(int i = 0; i < glow.width * glow.height * 4; i++){
-         if(pix[i] != 0){
-         pix[i] =ofMap(fftchosen,5,250,50,255);
-         
-         }
-         }
-         glow.update(); */
-        
-        
-        /*unsigned char * pix = glow.getPixels();
-         float numPix = glow.width * glow.height * 4;
-         
-         float x =ofMap(fftchosen,5,250,5,250);
-         
-         for(int i = 0; i <numPix;  i+=4){
-         if(pix[i] != 0)    if(pix[i]<x) pix[i] = x;
-         if(pix[i+1] != 0)  if(pix[i]<x) pix[i+1] = x;
-         if(pix[i+2] != 0)  if(pix[i]<x) pix[i+2] = x;
-         }
-         glow.update(); */
+       
         
         unsigned char * pix = glow.getPixels();
         float numPix = glow.width * glow.height * 4;
@@ -124,26 +103,7 @@ void Particle::draw(){
         //	ofDisableAlphaBlending();
     }
     
-    /* unsigned char * pix2 = glow2.getPixels();
-     float numPix2 = glow2.width * glow2.height * 4;
-     
-     float x =ofMap(fftchosen,5,250,5,250);
-     
-     for(int i = 0; i <numPix2;  i+=4){
-     if(pix2[i] != 0)    if(pix2[i]<x) pix2[i] = x;
-     if(pix2[i+1] != 0)  if(pix2[i]<x) pix2[i+1] = x;
-     if(pix2[i+2] != 0)  if(pix2[i]<x) pix2[i+2] = x;
-     }
-     glow2.update();
-     
-     float size = ofMap(fftchosen,5,250,300,500);
-     glow2.setAnchorPoint(size/2,size/2);
-     glow2.resize(size,size);
-     
-     //	ofDrawBitmapString(ofToString(size) + "size,", 40,40);
-     
-     glow2.draw(ofGetWidth()/2,ofGetHeight()/2);
-     */
+   
     
 }
 
@@ -304,28 +264,6 @@ void testApp::draw(){
     
     glow5.draw(ofGetWidth()/2,ofGetHeight()/2);
     
-    
-    
-    /*
-     unsigned char * pix3 = glow3.getPixels();
-     float numpix3 = glow3.width * glow3.height * 4;
-     
-     float x =ofMap(fftchosen2,5,250,5,250);
-     
-     for(int i = 0; i <numpix3;  i+=4){
-     if(pix3[i] != 0)    if(pix3[i]<x) pix3[i] = x;
-     if(pix3[i+1] != 0)  if(pix3[i]<x) pix3[i+1] = x;
-     if(pix3[i+2] != 0)  if(pix3[i]<x) pix3[i+2] = x;
-     }
-     glow3.update();
-     
-     float size = ofMap(fftchosen2,5,250,200,400);
-     glow3.setAnchorPoint(size/2,size/2);
-     glow3.resize(size,size);
-     
-     glow3.draw(ofGetWidth()/2,ofGetHeight()/2);
-     
-     */
     glow4.draw(ofGetWidth()/2,ofGetHeight()/2);
     
     //	ofDrawBitmapString(ofToString(size) + "size,", 40,40);
