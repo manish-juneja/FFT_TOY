@@ -1,13 +1,10 @@
+// Copyright (c) 2013 Manish Juneja
+// License: The MIT License (MIT)
+// MIT License page: http://opensource.org/licenses/MIT
 
 #pragma once
 
-/*
- This example demonstrates the emmiter which borns the particles.
- 
- It's the example 02-ParticlesEmitter from the book
- "Mastering openFrameworks: Creative Coding Demystified",
- Chapter 3 - Building a Simple Particle System
- */
+
 
 #include "ofMain.h"
 
