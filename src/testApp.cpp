@@ -266,6 +266,13 @@ void testApp::draw(){
     
     ofDrawBitmapString(ofToString(ofGetFrameRate()) + "fps", 40,50);
     ofDrawBitmapString(ofToString(bornRate) + "particles", 40,60);
+    ofDrawBitmapString( "press a to play music", 40,70);
+    ofDrawBitmapString( "press b to stop music", 40,80);
+    ofDrawBitmapString( "press w to increase particles", 40,90);
+    ofDrawBitmapString( "press s to decrease particles", 40,100);
+
+
+
     
     
     
