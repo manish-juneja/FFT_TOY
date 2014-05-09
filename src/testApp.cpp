@@ -31,7 +31,6 @@ ofPoint randomPointInCircle(){
     float angle = ofRandom( 0, M_TWO_PI );
     pnt.x = cos( angle ) * rad;
     pnt.y = sin( angle ) * rad;
-    //pnt.z = ofRandom(-1,1);
     
     return pnt;
 }
@@ -95,12 +94,7 @@ void Particle::draw(){
         glow.update();
         
         float size = ofMap(fftchosen,5,250,20,90);
-        //float size = ofMap(time,0,lifeTime,20,90);
-        //	ofEnableAlphaBlending();
-        //	float alpha =ofMap(time,0,lifeTime,255,0);
-        //	float x = ofMap(size,1,9,128,0);
-        //  ofSetColor( x,x,x,alpha );
-        //ofCircle( pos, size );  //Draw particle
+        
         glow.resize(size,size);
         glow.draw(pos,size,size);
         glow.update();
